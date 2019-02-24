@@ -32,7 +32,6 @@
 		E881B35821C188BA00A5A98B /* UserList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E881B35521C1877C00A5A98B /* UserList.xcdatamodeld */; };
 		E881B35A21C188DB00A5A98B /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = E881B35921C188DB00A5A98B /* TestData.json */; };
 		E8FCE999222301D900FCB5F8 /* UsersListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE998222301D900FCB5F8 /* UsersListViewControllerTests.swift */; };
-		E8FCE99B222308F200FCB5F8 /* UsersListDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE99A222308F200FCB5F8 /* UsersListDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +82,6 @@
 		E881B35621C1877C00A5A98B /* UserList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserList.xcdatamodel; sourceTree = "<group>"; };
 		E881B35921C188DB00A5A98B /* TestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
 		E8FCE998222301D900FCB5F8 /* UsersListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewControllerTests.swift; sourceTree = "<group>"; };
-		E8FCE99A222308F200FCB5F8 /* UsersListDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +148,6 @@
 		E881B31521C1865300A5A98B /* UserListTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8FCE99A222308F200FCB5F8 /* UsersListDataSourceTests.swift */,
 				E8FCE998222301D900FCB5F8 /* UsersListViewControllerTests.swift */,
 				E881B31621C1865300A5A98B /* UserListTests.swift */,
 				E881B35921C188DB00A5A98B /* TestData.json */,
@@ -369,7 +366,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E881B35821C188BA00A5A98B /* UserList.xcdatamodeld in Sources */,
-				E8FCE99B222308F200FCB5F8 /* UsersListDataSourceTests.swift in Sources */,
 				E881B31721C1865300A5A98B /* UserListTests.swift in Sources */,
 				E8FCE999222301D900FCB5F8 /* UsersListViewControllerTests.swift in Sources */,
 			);
