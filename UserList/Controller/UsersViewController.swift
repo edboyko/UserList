@@ -10,7 +10,7 @@ import UIKit
 
 class UsersViewController: UIViewController {
 
-    @IBOutlet private var collectionView: UICollectionView!
+    @IBOutlet private(set) var collectionView: UICollectionView!
     
     var usersDataSource: UsersCollectionViewDataSource?
     

@@ -11,7 +11,7 @@ import CoreData
 
 class StorageManager {
     
-    let persistentContainer: NSPersistentContainer
+    private let persistentContainer: NSPersistentContainer
     
     init(persistentContainer: NSPersistentContainer = AppDelegate.instance.persistentContainer) {
         self.persistentContainer = persistentContainer

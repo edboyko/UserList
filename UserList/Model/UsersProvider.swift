@@ -13,8 +13,8 @@ class UsersProvider {
     
     private static let baseURL = "https://api.stackexchange.com/2.2/users/moderators"
     
-    let storageManager: StorageManager
-    let networkManager: NetworkManager
+    private let storageManager: StorageManager
+    private let networkManager: NetworkManager
     private(set) var hasMorePages = true
     private(set) var currentPage = 1
     
@@ -36,6 +36,7 @@ class UsersProvider {
             URLQueryItem(name: "order", value: "desc")
         ]
         let url = urlComponents.url!
+        
         networkManager.loadData(url: url) { (data, error) in
             if let error = error as NSError? {
                 if error.code == NSURLErrorNotConnectedToInternet || error.code == NSURLErrorTimedOut {

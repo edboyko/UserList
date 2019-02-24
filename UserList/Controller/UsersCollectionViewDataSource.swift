@@ -11,9 +11,9 @@ import CoreData
 
 class UsersCollectionViewDataSource: NSObject, UICollectionViewDataSource {
 
-    let collectionView: UICollectionView
+    private let collectionView: UICollectionView
     
-    let usersProvider: UsersProvider
+    private let usersProvider: UsersProvider
     private var imageProviders = [Int64 : ImageProvider]()
     
     private(set) var users = [PersistentUser]()
@@ -77,7 +77,6 @@ class UsersCollectionViewDataSource: NSObject, UICollectionViewDataSource {
         }
         return loadingView
     }
-    
 }
 extension UsersCollectionViewDataSource: NSFetchedResultsControllerDelegate {
     
