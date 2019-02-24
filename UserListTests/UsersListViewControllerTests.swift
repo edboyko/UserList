@@ -16,17 +16,22 @@ class UsersListViewControllerTests: XCTestCase {
     override func setUp() {
         let navigationController = UIStoryboard(name: "Main", bundle: Bundle(for: UsersViewController.self)).instantiateInitialViewController() as? UINavigationController
         usersVC = navigationController?.viewControllers.first as? UsersViewController
+        
+        usersVC?.loadViewIfNeeded()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        usersVC = nil
     }
 
     func testUsersViewControllerHasCollectionView() {
         
-        usersVC?.loadViewIfNeeded()
-        
         XCTAssertNotNil(usersVC?.collectionView)
+    }
+    
+    func testDataSourceIsCorrect() {
+        
+        XCTAssertTrue(usersVC?.collectionView.dataSource is UsersCollectionViewDataSource)
     }
 
 }
