@@ -22,4 +22,11 @@ class UsersListViewControllerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testUsersViewControllerHasCollectionView() {
+        
+        usersVC?.loadViewIfNeeded()
+        
+        XCTAssertNotNil(usersVC?.collectionView)
+    }
+
 }
